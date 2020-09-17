@@ -7,8 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Noto+Serif+TC:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        *{
-            
+        *{            
             font-family: 'Noto Serif TC', serif;
             color: white;
         }
@@ -19,6 +18,7 @@
             position: relative;
             animation: body1 10s ease-in-out infinite;
         }
+
         @keyframes body1 {
             0%{
                 background:#374c64
@@ -78,13 +78,8 @@
             box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.3);
             border-radius: 4px;
             left: 30%;
-            /* 
-            calc可以計算不同單位的加減乘除(同單位也可以)
-            符號前後要有空格
-             */
             top: calc(50% - 5px);
-            transform: rotate(0deg);
-            /* 改變軸心位置 */
+            transform: rotate(0deg);            
             transform-origin: right center;
         }
 
@@ -226,9 +221,7 @@
         }
 
         .date div {
-            position: absolute;
-            /* top: -250px;
-            left: 180px; */
+            position: absolute;            
             font-size: 40px;
             text-shadow: rgb(51, 51, 51) 0 0 0.5em;
             font-weight: 100;
@@ -324,12 +317,9 @@
 
         const now = new Date()
         year.innerText = `${now.getFullYear()}年`
-        // document.write("<br>")
         month.innerText = `${now.getMonth()+1}月`
         day.innerText = `${now.getDate()}日`
-        // week.innerText = `星期${now.getDay()}`
-        month01.innerText = now.getDate()
-        
+        month01.innerText = now.getDate()        
                
     </script>
        
